@@ -1,1 +1,5 @@
-# appendicitis_analysis
+In this project I am analyzing data of children admitted to Children’s Hospital St. Hedwig in Regensburg, Germany, who are suspected of having appendicitis. The source of the data is Kaggle: https://www.kaggle.com/datasets/joebeachcapital/regensburg-pediatric-appendicitis/data
+
+In app_analysis, I use pandas to clean the data by isolating for the following features: 'Diagnosis_Presumptive', 'Diagnosis', 'Alvarado_Score', 'Appendix_Diameter', 'Lower_Right_Abd_Pain', 'Contralateral_Rebound_Tenderness', 'Coughing_Pain', 'Nausea', 'Loss_of_Appetite', 'Body_Temperature', 'Stool', 'Psoas_Sign'. Rows with blank entries in any of these columns are dropped. Patients who test positive and negative for appendicitis are separated into different dataframes. Proportion of false negatives is calculated to be 2.5% and proportion of false positives is calculated to be approimately 27%. Mean values for Alvarado score, appendix diameter, and body temperature are visually compared between the two groups through a bar graph built using Matplotlib. Count of patients with lower right abdomen pain, rebound tenderness, coughing pain, nausea, loss of appetite, body temperature, and presence of psoas sign are also compared through a bar graph.
+
+This project is an ongoing work in progress.
