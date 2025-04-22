@@ -4,4 +4,6 @@ In app_analysis, I use pandas to clean the data by isolating for the following f
 
 In app_logreg.ipynb, I use scikit-learn to build logistic regression models to predict diagnosis based on symptoms and clinical signs. Model 1 uses all features mentioned above, and Model 2 uses the same features except for body temperature. Model 1 has 0.93 accuracy with an AUC score of 0.90 as shown on the ROC curve and Model 2 has 0.92 accuracy also with an AUC score of 0.90. Both models predict appendicitis with precision 0.95, while Model 1 predicts no appendicitis with precision 0.86 and Model 2 predicts no appendicitis with precision 0.82.
 
+In app_decisiontree.ipynb, I use scikit-learn to build a decision tree model to predict diagnosis using all features mentioned above. This model has 0.95 accuracy with an AUC score of 0.93 as shown on the ROC curve. The model predicts appendicitis with precision 0.97 and no appendicitis with precision 0.87.
+
 This project is an ongoing work in progress.
