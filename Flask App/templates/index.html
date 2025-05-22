@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Appendicitis Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Appendicitis Risk Check</h1>
+    <div class = "container">
+    <form method="POST" action="/predict">
+        Alvarado Score: 
+        <input type="number" name="Alvarado_Score" step="any" required><br><br>
+        Appendix Diameter (mm): 
+        <input type="number" name="Appendix_Diameter" step="any" required><br><br>
+        Lower Right Abdomen Pain (0 or 1): 
+        <input type="number" name="Lower_Right_Abd_Pain" min="0" max="1" step="1" required><br><br>
+        Contralateral Rebound Tenderness (0 or 1): 
+        <input type="number" name="Contralateral_Rebound_Tenderness" min="0" max="1" step="1" required><br><br>
+        Coughing Pain (0 or 1): 
+        <input type="number" name="Coughing_Pain" min="0" max="1" step="1" required><br><br>
+        Nausea (0 or 1): 
+        <input type="number" name="Nausea" min="0" max="1" step="1" required><br><br>
+        Loss of Appetite (0 or 1): 
+        <input type="number" name="Loss_of_Appetite" min="0" max="1" step="1" required><br><br>
+        Body Temperature (°C): 
+        <input type="number" name="Body_Temperature" step="any" required><br><br>
+        Stool Issues (0 for normal, 1 for constipation, 2 for diarrhea): 
+        <input type="number" name="Stool" min="0" max="2" step="1" required><br><br>
+        Psoas Sign (0 or 1): 
+        <input type="number" name="Psoas_Sign" min="0" max="1" step="1" required><br><br>
+        <input type="submit" value="Predict">
+
+{% if prediction_percent is defined %}
+    {% set risk_color = 'green' %}
+    {% if prediction_percent > 70 %}
+        {% set risk_color = 'red' %}
+    {% elif prediction_percent > 40 %}
+        {% set risk_color = 'orange' %}
+    {% endif %}
+    
+    <h2>Prediction: {{ prediction }} </h2>
+    <div class="risk-bar-container">
+        <div class="risk-bar {{ risk_color }}" style="width: {{ prediction_percent }}%;"></div>
+    </div>
+{% endif %}
+    </div>
+</body>
+</html>
