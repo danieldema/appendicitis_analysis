@@ -1,5 +1,9 @@
 In this project I analyzed data of children admitted to Children’s Hospital St. Hedwig in Regensburg, Germany, who are suspected of having appendicitis, with the goal of assessing and comparing performance of different models (logistic regression, decision tree, random forest) in predicting diagnosis. The source of the data is Kaggle: https://www.kaggle.com/datasets/joebeachcapital/regensburg-pediatric-appendicitis/data
 
+# Front End
+
+I used Flask to create a web application to interact with the random forest model. The web application consists of a form, prompting the user to provide all features required to run the model. The web application will then display the probability of having appendicitis based on the model. I wrapped the Flask application in a Docker container to ensure consistent environment setup and then deployed the containerized app to Azure App Service for scalable and easy cloud hosting.
+
 # Initial Analysis
 
 In app_analysis, I used pandas to clean the data by isolating for the following features: 'Diagnosis_Presumptive', 'Diagnosis', 'Alvarado_Score', 'Appendix_Diameter', 'Lower_Right_Abd_Pain', 'Contralateral_Rebound_Tenderness', 'Coughing_Pain', 'Nausea', 'Loss_of_Appetite', 'Body_Temperature', 'Stool', 'Psoas_Sign'. Rows with blank entries in any of these columns were dropped. Patients who tested positive and negative for appendicitis were separated into different dataframes. Proportion of false negatives was calculated to be 2.5% and proportion of false positives was calculated to be approimately 27%. Mean values for Alvarado score, appendix diameter, and body temperature were visually compared between the two groups through a bar graph built using Matplotlib. Count of patients with lower right abdomen pain, rebound tenderness, coughing pain, nausea, loss of appetite, body temperature, and presence of psoas sign were also compared through a bar graph.
