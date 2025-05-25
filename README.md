@@ -88,7 +88,7 @@ Data Pipeline → Model Training → Model Comparison → Web App → Docker →
 
 The application is containerized and deployed on Azure App Service for scalability and reliability.
 
-**Live Demo**: https://appendicitisapp-dnf3btg7btapemd4.eastus-01.azurewebsites.net/
+**Live Demo**: [https://appendicitisapp-dnf3btg7btapemd4.eastus-01.azurewebsites.net/]
 
 ### Local Development
 ```bash
@@ -157,6 +157,6 @@ This tool is designed to support clinical decision-making and should not replace
 
 ---
 
-**Contact**: [Your LinkedIn] | [Your Email]
-**Repository**: [GitHub Link]
-**Live Demo**: [Azure App URL]
+**Contact**: [https://www.linkedin.com/in/danieldema/] | [danieldema42@gmail.com]
+**Repository**: [https://github.com/danieldema/appendicitis_analysis]
+**Live Demo**: [https://appendicitisapp-dnf3btg7btapemd4.eastus-01.azurewebsites.net/]
