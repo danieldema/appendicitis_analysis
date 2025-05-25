@@ -28,12 +28,10 @@ Data Pipeline → Model Training → Model Comparison → Web App → Docker →
 **Web Development:**
 - Flask (backend API)
 - HTML/CSS (frontend)
-- RESTful API design
 
 **DevOps & Deployment:**
 - Docker (containerization)
 - Azure App Service (cloud hosting)
-- CI/CD pipeline
 
 ## Model Performance Comparison
 
