@@ -130,7 +130,7 @@ docker run -p 5000:5000 appendicitis-app
 - **Data Validation**: Quality checks and outlier detection
 
 ### Model Training & Validation
-- **Train/Test Split**: Standard 80/20 split with stratification
+- **Train/Test Split**: Standard 70/30 split with stratification
 - **Cross-Validation**: K-fold validation for robust performance estimates
 - **Hyperparameter Optimization**: Grid search for optimal parameters
 - **Performance Metrics**: Accuracy, AUC, Precision, Recall, F1-score
@@ -139,13 +139,6 @@ docker run -p 5000:5000 appendicitis-app
 - **Feature Importance**: Random Forest feature rankings
 - **Correlation Analysis**: Multi-collinearity assessment
 - **ROC Curve Analysis**: Model discrimination evaluation
-
-## Future Enhancements
-
-- **Real-time Integration**: Hospital system API connections
-- **Model Monitoring**: Performance tracking in production
-- **Advanced ML**: Deep learning and ensemble methods
-- **Multi-language Support**: International deployment capability
 
 ## Data Source
 
@@ -158,5 +151,7 @@ This tool is designed to support clinical decision-making and should not replace
 ---
 
 **Contact**: [https://www.linkedin.com/in/danieldema/] | [danieldema42@gmail.com]
+
 **Repository**: [https://github.com/danieldema/appendicitis_analysis]
+
 **Live Demo**: [https://appendicitisapp-dnf3btg7btapemd4.eastus-01.azurewebsites.net/]
