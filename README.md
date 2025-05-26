@@ -119,23 +119,6 @@ docker run -p 5000:5000 appendicitis-app
 └── requirements.txt           # Dependencies
 ```
 
-## Technical Methodology
-
-### Data Preprocessing
-- **Missing Value Handling**: Systematic removal of incomplete records
-- **Feature Selection**: 12 clinically relevant variables
-- **Data Validation**: Quality checks and outlier detection
-
-### Model Training & Validation
-- **Train/Test Split**: Standard 70/30 split with stratification
-- **Cross-Validation**: K-fold validation for robust performance estimates
-- **Performance Metrics**: Accuracy, AUC, Precision
-
-### Model Interpretability
-- **Feature Importance**: Random Forest feature rankings
-- **Correlation Analysis**: Multi-collinearity assessment
-- **ROC Curve Analysis**: Model discrimination evaluation
-
 ## Data Source
 
 Dataset sourced from Kaggle: [Regensburg Pediatric Appendicitis Dataset](https://www.kaggle.com/datasets/joebeachcapital/regensburg-pediatric-appendicitis/data)
