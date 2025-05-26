@@ -6,12 +6,6 @@ A comprehensive machine learning solution for predicting appendicitis in pediatr
 
 This project develops and compares multiple machine learning models to predict appendicitis diagnosis in children using clinical data from Children's Hospital St. Hedwig, Regensburg, Germany. The best-performing model is deployed as a containerized web application on Azure App Service.
 
-### Key Achievements
-- **97% accuracy** with Random Forest model (AUC: 0.98)
-- **Full-stack deployment** with Flask, Docker, and Azure
-- **Comprehensive model comparison** across 3 ML algorithms
-- **Production-ready** containerized application
-
 ## Architecture
 
 ```
@@ -57,12 +51,10 @@ Data Pipeline → Model Training → Model Comparison → Web App → Docker →
 ### Web Application
 - **User-Friendly Interface**: Intuitive form for clinical data input
 - **Real-Time Predictions**: Instant probability calculations
-- **Clinical Integration Ready**: Designed for healthcare workflows
 
 ### Production Deployment
 - **Containerization**: Docker for consistent environments
 - **Cloud Hosting**: Scalable Azure App Service deployment
-- **High Availability**: Production-ready architecture
 
 ## Clinical Impact & Insights
 
