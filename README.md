@@ -57,7 +57,6 @@ Data Pipeline → Model Training → Model Comparison → Web App → Docker →
 ### Web Application
 - **User-Friendly Interface**: Intuitive form for clinical data input
 - **Real-Time Predictions**: Instant probability calculations
-- **Responsive Design**: Accessible across different devices
 - **Clinical Integration Ready**: Designed for healthcare workflows
 
 ### Production Deployment
@@ -130,8 +129,7 @@ docker run -p 5000:5000 appendicitis-app
 ### Model Training & Validation
 - **Train/Test Split**: Standard 70/30 split with stratification
 - **Cross-Validation**: K-fold validation for robust performance estimates
-- **Hyperparameter Optimization**: Grid search for optimal parameters
-- **Performance Metrics**: Accuracy, AUC, Precision, Recall, F1-score
+- **Performance Metrics**: Accuracy, AUC, Precision
 
 ### Model Interpretability
 - **Feature Importance**: Random Forest feature rankings
