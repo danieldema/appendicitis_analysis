@@ -106,7 +106,7 @@ docker run -p 5000:5000 appendicitis-app
 ## Project Structure
 
 ```
-├── app_analysis.ipynb          # Exploratory data analysis
+├── app_analysis.ipynb         # Exploratory data analysis
 ├── app_logreg.ipynb           # Logistic regression models
 ├── app_decisiontree.ipynb     # Decision tree implementation
 ├── app_randomforest.ipynb     # Random forest model
