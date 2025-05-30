@@ -66,7 +66,6 @@ Data Pipeline → Model Training → Model Comparison → Web App → Docker →
   4. Binary symptoms (lower impact)
 
 - **False Negative Rate**: 3% - Critical for patient safety
-- **False Positive Rate**: 22.5% - Acceptable for screening tool
 
 ### Clinical Significance
 - Supports rapid triage decisions in emergency departments
