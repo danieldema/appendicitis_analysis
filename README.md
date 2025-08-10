@@ -4,7 +4,7 @@ A machine learning approach for predicting appendicitis in pediatric patients, f
 
 ## Project Overview
 
-This project develops and compares multiple machine learning models to predict appendicitis diagnosis in children using clinical data from Children's Hospital St. Hedwig, Regensburg, Germany. The best-performing model is deployed as a containerized web application on Azure App Service.
+This project develops and compares multiple machine learning models to predict appendicitis diagnosis in children using clinical data from Children's Hospital St. Hedwig, Regensburg, Germany. The best-performing model is deployed as a containerized web application via Microsoft Azure.
 
 ## Tech Stack
 
