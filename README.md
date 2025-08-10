@@ -37,10 +37,6 @@ This project develops and compares multiple machine learning models to predict a
 
 - **False Negative Rate**: 3% - Critical for patient safety
 
-The application is containerized and deployed on Azure App Service for scalability and reliability.
-
-**Live Demo**: [https://appendicitisapp-dnf3btg7btapemd4.eastus-01.azurewebsites.net/]
-
 ## Project Structure
 
 ```
@@ -66,9 +62,5 @@ Dataset sourced from Kaggle: [Regensburg Pediatric Appendicitis Dataset](https:/
 This tool is designed to support clinical decision-making and should not replace professional medical judgment. Always consult with qualified healthcare providers for patient care decisions.
 
 ---
-
-**Contact**: [https://www.linkedin.com/in/danieldema/] | [danieldema42@gmail.com]
-
-**Repository**: [https://github.com/danieldema/appendicitis_analysis]
 
 **Live Demo**: [https://appendicitisapp-dnf3btg7btapemd4.eastus-01.azurewebsites.net/]
