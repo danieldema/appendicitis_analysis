@@ -17,7 +17,7 @@ This project develops and compares multiple machine learning models to predict a
 - Flask (backend API)
 - HTML/CSS (frontend)
 
-**DevOps & Deployment:**
+**Deployment:**
 - Docker (containerization)
 - Azure App Service (cloud hosting)
 
