@@ -1,18 +1,12 @@
 # Pediatric Appendicitis Prediction System
 
-A comprehensive machine learning solution for predicting appendicitis in pediatric patients, featuring model comparison, web deployment, and clinical decision support.
+A machine learning approach for predicting appendicitis in pediatric patients, featuring model comparison and web deployment of a 97% accurate random forest model.
 
 ## Project Overview
 
 This project develops and compares multiple machine learning models to predict appendicitis diagnosis in children using clinical data from Children's Hospital St. Hedwig, Regensburg, Germany. The best-performing model is deployed as a containerized web application on Azure App Service.
 
-## Architecture
-
-```
-Data Pipeline → Model Training → Model Comparison → Web App → Docker → Azure Deployment
-```
-
-## Technology Stack
+## Tech Stack
 
 **Machine Learning & Data Science:**
 - Python (pandas, scikit-learn, matplotlib)
@@ -35,30 +29,6 @@ Data Pipeline → Model Training → Model Comparison → Web App → Docker →
 | Decision Tree (Optimized) | 96% | 0.95 | 97% | 87% |
 | Logistic Regression | 93% | 0.90 | 95% | 86% |
 
-## Key Features
-
-### Data Analysis & Preprocessing
-- **Feature Engineering**: 12 clinical features including Alvarado Score, appendix diameter, and symptom indicators
-- **Data Quality**: Systematic handling of missing values and outliers
-- **Statistical Analysis**: Correlation analysis and feature importance evaluation
-
-### Model Development
-- **Multiple Algorithms**: Comprehensive comparison of ML approaches
-- **Hyperparameter Tuning**: GridSearchCV optimization for best performance
-- **Cross-Validation**: Robust model evaluation and selection
-- **Feature Importance Analysis**: Identification of key diagnostic indicators
-
-### Web Application
-- **User-Friendly Interface**: Intuitive form for clinical data input
-- **Real-Time Predictions**: Instant probability calculations
-
-### Production Deployment
-- **Containerization**: Docker for consistent environments
-- **Cloud Hosting**: Scalable Azure App Service deployment
-
-## Clinical Impact & Insights
-
-### Key Findings
 - **Feature Importance Hierarchy**: 
   1. Appendix Diameter (highest impact)
   2. Alvarado Score
@@ -67,32 +37,9 @@ Data Pipeline → Model Training → Model Comparison → Web App → Docker →
 
 - **False Negative Rate**: 3% - Critical for patient safety
 
-### Clinical Significance
-- Supports rapid triage decisions in emergency departments
-- Reduces diagnostic uncertainty in pediatric cases
-- Provides objective probability assessments alongside clinical judgment
-
-## Deployment
-
 The application is containerized and deployed on Azure App Service for scalability and reliability.
 
 **Live Demo**: [https://appendicitisapp-dnf3btg7btapemd4.eastus-01.azurewebsites.net/]
-
-### Local Development
-```bash
-# Clone repository
-git clone https://github.com/danieldema/appendicitis_analysis
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run Flask application
-python app.py
-
-# Or run with Docker
-docker build -t appendicitis-app .
-docker run -p 5000:5000 appendicitis-app
-```
 
 ## Project Structure
 
